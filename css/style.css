@@ -1,0 +1,224 @@
+body{
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-hide {
+  display: none;
+}
+.ba-panels {
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+  flex-direction: column;
+}
+.ba-panel {
+	background: #6b089c;
+	box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .1);
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	transition:
+		font-size 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+		flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+		background 0.7s;
+	font-size: 20px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-grow: 1;
+
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+  .ba-panel1 { background:#65D6E4; }
+  .ba-panel2 { background:#FE5013; }
+  .ba-panel3 { background:#FCFAFD; }
+  .ba-panel4 { background:#0E467C; }
+  .ba-panel5 { background:#E6DF91; }
+  .ba-panel6 { background:#3B4453; }
+  .ba-panel > * {
+    margin:0;
+    width: 100%;
+    transition:transform 0.5s;
+    flex:1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ba-panel > *:first-child {
+  	transform: translateX(-100%);
+  }
+  .ba-panel.open-active > *:first-child {
+  	transform: translateX(0);
+    font-size: 1em;
+  }
+  .ba-panel.open-active > *:last-child {
+  	transform: translateX(0);
+    font-size: 1em;
+  }
+  .ba-panel > *:last-child {
+  	transform: translateX(100%);
+  }
+svg {
+  width: 1px;
+  height: 1px;
+}
+.ba-panel.open-active * svg {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+  .ba-panel p {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 0.2em;
+  }
+  .ba-panel p:nth-child(2) {
+    font-size: 3em;
+  }
+  .ba-panel.open {
+  	flex-grow: 5;
+    font-size:30px;
+  }
+
+
+  .ba-panel ul {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    font-size: 0.2em;
+  }
+.ba-panel3 {
+  color: #FE5013;
+}
+ul li {
+  padding-left: 15px;
+}
+
+.ba-skill-container {
+  display: flex;
+}
+
+/* ABOUT */
+
+.ba-panel.open-active  .ba-about ul {
+  font-size: 1em;
+}
+
+.ba-panel  .ba-photo {
+  display: none;
+}
+.ba-panel.open-active  .ba-photo {
+  display: block;
+}
+
+/* CONTACT */
+ .ba-contact-list  {
+  display: none;
+}
+.ba-contact {
+
+  display: none;
+}
+.ba-panel.open-active > .ba-contact{
+  display: flex;
+  align-items: flex-start;
+}
+.ba-panel.open-active > .ba-contact  .ba-contact__list {
+  display: flex;
+  font-size: 0.75em;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  list-style-type: none;
+}
+.ba-panel.open-active > .ba-contact  .ba-contact__subtitle{
+  font-size: 0.75em;
+  margin: 0;
+}
+.ba-panel.open-active > .ba-contact  .ba-contact__link {
+  text-decoration: none;
+  color: #FFF;
+}
+.ba-panel.open-active > .ba-contact .ba-contact__link:hover {
+  color:#0E467C;
+}
+.ba-panel.open-active > .ba-social {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+/* /SKILL */
+ .ba-skill-list  {
+  display: none;
+}
+.ba-panel.open-active > .ba-skill-container > .ba-skill-list {
+  display: flex;
+  font-size: 1em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  list-style-type: none;
+
+}
+.ba-panel.open-active > .ba-skill-container{
+  display: flex;
+  font-size: 1em;
+  }
+
